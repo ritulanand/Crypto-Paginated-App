@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const ctx = document.getElementById("coinChart").getContext("2d");
   let coinChart = new Chart(ctx, {
-    type: "line",
+    type: "bar",
     data: {
       labels: [],
       datasets: [
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           label: "Price (USD)",
           data: [],
           borderColor: "#EEBC1D",
-          fill: false,
+          fill: true,
         },
       ],
     },
@@ -111,10 +111,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       responsive: true,
       scales: {
         x: {
-          display: true,
+          display: false,
         },
         y: {
-          display: true,
+          display: false,
           beginAtZero: false,
           ticks: {
             callback: function (value) {
