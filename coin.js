@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const ctx = document.getElementById("coinChart").getContext("2d");
   let coinChart = new Chart(ctx, {
-    type: "bar",
+    type: "line",
     data: {
       labels: [],
       datasets: [
