@@ -111,10 +111,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       responsive: true,
       scales: {
         x: {
-          display: false,
+          display: true,
         },
         y: {
-          display: false,
+          display: true,
           beginAtZero: false,
           ticks: {
             callback: function (value) {
